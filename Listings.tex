@@ -1,0 +1,70 @@
+\usepackage[final]{listings}
+\usepackage[dvipsnames]{xcolor}
+
+\lstdefinelanguage{Go}%
+{morekeywords=[1]{package,import,func,type,struct,return,defer,panic,%
+      recover,select,var,const,iota,},%
+  morekeywords=[2]{string,uint,uint8,uint16,uint32,uint64,int,int8,int16,%
+      int32,int64,bool,float32,float64,complex64,complex128,byte,rune,uintptr,%
+      error,interface},%
+  morekeywords=[3]{map,slice,make,new,nil,len,cap,copy,close,true,false,%
+      delete,append,real,imag,complex,chan,},%
+  morekeywords=[4]{for,break,continue,range,go,goto,switch,case,fallthrough,if,%
+      else,default,},%
+  morekeywords=[5]{Println,Printf,Error,Print,},%
+  sensitive=true,%
+  morecomment=[l]{//},%
+  morecomment=[s]{/*}{*/},%
+  morestring=[b]',%
+  morestring=[b]",%
+  morestring=[s]{`}{`},%
+}
+
+\lstdefinelanguage{Kotlin}{
+  comment=[l]{//},
+  commentstyle={\color{gray}\ttfamily},
+  emph={delegate, filter, first, firstOrNull, forEach, lazy, map, mapNotNull, println, return@},
+  emphstyle={\color{OrangeRed}},
+  identifierstyle=\color{black},
+  keywords={abstract, actual, as, as?, break, by, class, companion, continue, data, do, dynamic, else, enum, expect, false, final, for, fun, get, if, import, in, interface, internal, is, null, object, override, package, private, public, return, set, super, suspend, this, throw, true, try, typealias, val, var, vararg, when, where, while},
+  keywordstyle={\color{NavyBlue}\bfseries},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]",
+  morestring=[s]{"""*}{*"""},
+  ndkeywords={@Deprecated, @JvmField, @JvmName, @JvmOverloads, @JvmStatic, @JvmSynthetic, Array, Byte, Double, Float, Int, Integer, Iterable, Long, Runnable, Short, String},
+  ndkeywordstyle={\color{BurntOrange}\bfseries},
+  sensitive=true,
+  stringstyle={\color{ForestGreen}\ttfamily},
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.2,0.2,0.2}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.95}
+
+\lstdefinestyle{default}{
+  backgroundcolor=\color{backcolour},
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  keepspaces=true,
+  numbers=left,
+  numbersep=6pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2,
+  xleftmargin=14pt,
+  framexleftmargin=14pt,
+  framexrightmargin=0pt,
+  framexbottommargin=4pt,
+  frame=single,
+  framerule=0pt,
+}
+
+\lstset{style=default}
